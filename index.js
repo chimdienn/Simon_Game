@@ -17,8 +17,8 @@ function flashAnimation(id){
 }
 
 function playSound(id){
-    var sound = new Audio(id + ".mp3");
-    sound.volume = 0.6;
+    var sound = new Audio("sounds/" + id + ".mp3");
+    sound.volume = 0.2;
     sound.play();
 }
 
