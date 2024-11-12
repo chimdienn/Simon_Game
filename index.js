@@ -18,7 +18,7 @@ function flashAnimation(id){
 
 function playSound(id){
     var sound = new Audio(id + ".mp3");
-    sound.volume = 0.5;
+    sound.volume = 0.1;
     sound.play();
 }
 
