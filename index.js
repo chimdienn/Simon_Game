@@ -17,7 +17,7 @@ function flashAnimation(id){
 }
 
 function playSound(id){
-    var sound = new Audio("sounds/" + id + ".mp3");
+    var sound = new Audio(id + ".mp3");
     sound.play();
 }
 
@@ -29,8 +29,7 @@ function animatePress(id){
 }
 
 function restartGame(){
-    var sound = new Audio("sounds/wrong.mp3");
-    sound.play();
+    playSound("wrong");
     $("h1").html("Game Over, Press Any Key to Restart");
     gamePattern = [];
     userClickedPattern = [];
