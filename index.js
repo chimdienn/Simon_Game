@@ -57,6 +57,13 @@ $(document).on("keypress", function(){
     }
     gameStarted = true;
 });
+
+$(document).on("click", function(){
+    if (!gameStarted){
+        nextSequence();
+    }
+    gameStarted = true;
+});
     
 
 $(".btn").on("click", function(){
