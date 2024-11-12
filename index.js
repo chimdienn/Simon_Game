@@ -31,7 +31,7 @@ function animatePress(id){
 
 function restartGame(){
     playSound("wrong");
-    $("h1").html("Game Over, Press Any Key to Restart");
+    $("h1").html("Game Over, Press Any Key or This Line to Restart");
     gamePattern = [];
     userClickedPattern = [];
     gameStarted = false;
@@ -59,7 +59,7 @@ $(document).on("keypress", function(){
     gameStarted = true;
 });
 
-$(document).on("click", function(){
+$("h1").on("click", function(){
     if (!gameStarted){
         nextSequence();
     }
